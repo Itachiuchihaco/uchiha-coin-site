@@ -5,36 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Uchiha Coin</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link rel="icon" href="https://i.postimg.cc/ZK05w8vk/IMG-8360.png" />
   <style>
     body {
       margin: 0;
-      overflow: hidden;
-      position: relative;
+      background: url('https://itachiuchihaco.github.io/uchiha-coin-site/A_digital_graphic_design_webpage_for_%22Uchiha_Coin%22.png') no-repeat center center fixed;
+      background-size: cover;
     }
-    .animated-bg {
+    .overlay {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
       z-index: -1;
-      pointer-events: none;
     }
   </style>
 </head>
 <body class="text-white font-sans">
-  <!-- Background Animation -->
-  <div class="animated-bg">
-    <lottie-player
-      src="https://assets9.lottiefiles.com/packages/lf20_tll0j4bb.json"
-      background="transparent"
-      speed="1"
-      style="width: 100%; height: 100%;"
-      loop autoplay>
-    </lottie-player>
-  </div>
+  <!-- Dark overlay for readability -->
+  <div class="overlay"></div>
 
   <!-- Hero Section -->
   <section class="text-center py-20 px-6 animate-fade-in">
@@ -46,11 +37,11 @@
   <!-- About Section -->
   <section class="max-w-3xl mx-auto px-6 py-10">
     <h2 class="text-2xl font-bold text-red-500 mb-4">About Uchiha Coin</h2>
-    <p class="text-gray-400">Born from the shadows of the blockchain, Uchiha Coin is a fan-powered memecoin forged for those who value legacy, loyalty, and lightning-fast transactions. Inspired by the legendary clan, our coin channels unstoppable energy for the decentralized age.</p>
+    <p class="text-gray-300">Born from the shadows of the blockchain, Uchiha Coin is a fan-powered memecoin forged for those who value legacy, loyalty, and lightning-fast transactions. Inspired by the legendary clan, our coin channels unstoppable energy for the decentralized age.</p>
   </section>
 
   <!-- Token Info Section -->
-  <section class="bg-gray-900 py-10 px-6">
+  <section class="bg-gray-900/80 py-10 px-6">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-2xl font-bold text-red-500 mb-4">Token Information</h2>
       <ul class="text-gray-300 space-y-2">
@@ -66,15 +57,15 @@
   <!-- Whitepaper Section -->
   <section class="max-w-3xl mx-auto px-6 py-10">
     <h2 class="text-2xl font-bold text-red-500 mb-4">Whitepaper</h2>
-    <p class="text-gray-400 mb-4">Dive into the lore and logic behind Uchiha Coin.</p>
+    <p class="text-gray-300 mb-4">Dive into the lore and logic behind Uchiha Coin.</p>
     <a href="https://itachiuchihaco.github.io/uchiha-coin-site/Uchiha_Coin_Whitepaper.pdf" class="inline-block bg-red-600 hover:bg-red-700 px-6 py-2 rounded-lg text-white font-semibold" target="_blank">Download Whitepaper</a>
   </section>
 
   <!-- NFT Preview Section -->
-  <section class="bg-gray-800 py-10 px-6 text-center">
+  <section class="bg-gray-800/90 py-10 px-6 text-center">
     <h2 class="text-2xl font-bold text-red-500 mb-4">Uchiha NFT Preview</h2>
-    <p class="text-gray-400 mb-6">Coming soon: Own your own Sharingan-powered collectible.</p>
-    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_5ngs2ksb.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: auto;" loop autoplay></lottie-player>
+    <p class="text-gray-300 mb-6">Coming soon: Own your own Sharingan-powered collectible.</p>
+    <img src="https://assets9.lottiefiles.com/private_files/lf30_editor_fzpdz5up.json" alt="Uchiha NFT" class="mx-auto w-60 h-auto">
   </section>
 
   <!-- Buy Button Section -->
@@ -83,7 +74,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="text-center text-sm text-gray-500 py-6">
+  <footer class="text-center text-sm text-gray-400 py-6">
     <p>&copy; 2025 Uchiha Coin. All rights reserved.</p>
     <p>Follow us: Twitter | Telegram | Discord (coming soon)</p>
   </footer>
